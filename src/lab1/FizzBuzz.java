@@ -6,6 +6,10 @@ package lab1;
 class FizzBuzz {
 
     public static void main(String[] args) {
+        main2();
+    }
+
+    static void main2() {
         int counter = 0;
 
         while(counter < 100) {
@@ -14,7 +18,7 @@ class FizzBuzz {
         }
     }
 
-    private static int doFizzBuzz(int counter) {
+    static int doFizzBuzz(int counter) {
         // Find out which numbers divide i.
         boolean divisibleBy3 = counter % 3 == 0;
         boolean divisibleBy5 = counter % 5 == 0;
